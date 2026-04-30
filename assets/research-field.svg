@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1200" viewBox="0 0 1800 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Abstract landscape research field</title>
+  <desc id="desc">A layered aerial-map inspired visual with ecological patches, waterways, routes, and spatial data nodes.</desc>
+  <defs>
+    <linearGradient id="base" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#efe5d3"/>
+      <stop offset="0.45" stop-color="#dce7d2"/>
+      <stop offset="1" stop-color="#b8cfc3"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#2b8f91" stop-opacity="0.82"/>
+      <stop offset="1" stop-color="#75b7a0" stop-opacity="0.7"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="20" flood-color="#1f2421" flood-opacity="0.16"/>
+    </filter>
+    <pattern id="grid" width="54" height="54" patternUnits="userSpaceOnUse">
+      <path d="M54 0H0V54" fill="none" stroke="#1f2421" stroke-opacity="0.09" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1800" height="1200" fill="url(#base)"/>
+  <rect width="1800" height="1200" fill="url(#grid)" opacity="0.62"/>
+  <path d="M-80 690C170 540 315 612 500 470C720 300 932 332 1090 430C1265 538 1458 474 1880 232V1220H-80Z" fill="#6f8f72" opacity="0.26"/>
+  <path d="M1880 122C1594 276 1420 374 1268 388C1050 408 935 232 720 272C532 308 435 492 218 496C90 498 2 450-90 394V-80H1880Z" fill="#bb6b43" opacity="0.13"/>
+  <path d="M-60 878C170 784 337 854 530 740C716 630 875 510 1064 554C1228 592 1364 754 1532 726C1652 706 1752 610 1868 534" fill="none" stroke="url(#water)" stroke-width="84" stroke-linecap="round" opacity="0.82"/>
+  <path d="M-60 878C170 784 337 854 530 740C716 630 875 510 1064 554C1228 592 1364 754 1532 726C1652 706 1752 610 1868 534" fill="none" stroke="#f7f4ed" stroke-width="8" stroke-linecap="round" opacity="0.44"/>
+  <g fill="none" stroke="#1f2421" stroke-opacity="0.22" stroke-width="2">
+    <path d="M320 1060C390 875 480 785 590 702C748 582 825 404 908 166"/>
+    <path d="M760 1120C800 930 892 812 1044 720C1216 616 1340 504 1444 284"/>
+    <path d="M1130 1188C1112 1012 1172 876 1300 760C1456 618 1595 448 1720 204"/>
+  </g>
+  <g filter="url(#softShadow)">
+    <path d="M930 214C1030 168 1162 205 1218 304C1278 411 1212 545 1092 572C954 602 830 486 850 350C858 292 882 238 930 214Z" fill="#f5efe2" opacity="0.72"/>
+    <path d="M1258 822C1342 764 1458 784 1517 862C1586 953 1530 1090 1410 1110C1298 1128 1205 1040 1218 932C1224 886 1238 846 1258 822Z" fill="#f5efe2" opacity="0.72"/>
+    <path d="M410 392C488 330 614 336 690 410C776 494 754 634 648 688C520 754 368 660 370 520C370 466 386 420 410 392Z" fill="#f5efe2" opacity="0.66"/>
+  </g>
+  <g stroke="#1f2421" stroke-opacity="0.42" stroke-width="2">
+    <path d="M544 534L1006 386L1386 956" fill="none" stroke-dasharray="8 12"/>
+    <path d="M1006 386L1426 328" fill="none" stroke-dasharray="8 12"/>
+    <path d="M544 534L342 816L1386 956" fill="none" stroke-dasharray="8 12"/>
+  </g>
+  <g>
+    <circle cx="544" cy="534" r="18" fill="#1f7a78"/>
+    <circle cx="1006" cy="386" r="18" fill="#bb6b43"/>
+    <circle cx="1386" cy="956" r="18" fill="#5f4b7b"/>
+    <circle cx="1426" cy="328" r="13" fill="#c79c45"/>
+    <circle cx="342" cy="816" r="13" fill="#1f2421"/>
+    <circle cx="544" cy="534" r="52" fill="none" stroke="#1f7a78" stroke-opacity="0.3" stroke-width="2"/>
+    <circle cx="1006" cy="386" r="64" fill="none" stroke="#bb6b43" stroke-opacity="0.26" stroke-width="2"/>
+    <circle cx="1386" cy="956" r="72" fill="none" stroke="#5f4b7b" stroke-opacity="0.24" stroke-width="2"/>
+  </g>
+  <g fill="#1f2421" opacity="0.16">
+    <rect x="1462" y="154" width="180" height="8"/>
+    <rect x="1462" y="178" width="112" height="8"/>
+    <rect x="1462" y="202" width="148" height="8"/>
+    <rect x="112" y="986" width="190" height="8"/>
+    <rect x="112" y="1010" width="132" height="8"/>
+    <rect x="112" y="1034" width="164" height="8"/>
+  </g>
+</svg>

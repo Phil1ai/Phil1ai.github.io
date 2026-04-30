@@ -1,0 +1,780 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wuyao Li Personal Homepage</title>
+    <meta
+      name="description"
+      content="Wuyao Li's academic portfolio in climate economics, spatial data science, urban decarbonization, and environmental policy evaluation."
+    />
+    <link rel="preconnect" href="https://unpkg.com" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#about">About Me</a>
+        <a href="#publications">Research Experience</a>
+        <a href="#honors">Honors</a>
+        <a href="#portfolio">Personal Works</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="icon-button menu-button" type="button" data-menu-toggle aria-label="Open menu" title="Open menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </header>
+
+    <nav class="mobile-nav" data-mobile-nav aria-label="Mobile navigation">
+      <a href="#about">About Me</a>
+      <a href="#publications">Research Experience</a>
+      <a href="#honors">Honors</a>
+      <a href="#portfolio">Personal Works</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="page-flight" data-page-flight aria-hidden="true">
+      <div class="flight-tower">
+        <span class="tower-spine"></span>
+        <span class="tower-cross cross-a"></span>
+        <span class="tower-cross cross-b"></span>
+        <span class="tower-cross cross-c"></span>
+        <span class="catch-arm arm-left"></span>
+        <span class="catch-arm arm-right"></span>
+        <span class="catch-base"></span>
+        <span class="flight-trail"></span>
+      </div>
+      <div class="flight-craft">
+        <span class="mini-rocket">
+          <span class="rocket-window"></span>
+        </span>
+      </div>
+    </div>
+
+    <main id="home">
+      <section class="hero">
+        <div class="hero-visual" aria-hidden="true">
+          <div class="pale-dot-scene">
+            <span class="sunbeam"></span>
+            <span class="star-layer stars-a"></span>
+            <span class="star-layer stars-b"></span>
+            <span class="orbit-ring ring-a"></span>
+            <span class="orbit-ring ring-b"></span>
+            <span class="pale-blue-dot" title="0.12 pixel"></span>
+            <div class="lunar-flight" aria-hidden="true">
+              <span class="flight-earth"></span>
+              <span class="flight-moon"></span>
+              <svg class="flight-svg" viewBox="0 0 1000 520" preserveAspectRatio="xMidYMid meet">
+                <defs>
+                  <path
+                    id="artemis-loop"
+                    d="M798 314 C724 294 660 312 642 356 C616 418 704 456 796 414 C918 358 842 250 704 164 C560 76 352 92 206 238 C138 306 120 380 168 410 C222 444 286 396 268 346 C248 292 174 292 152 342 C118 420 260 490 474 482 C650 474 770 414 798 314"
+                  />
+                  <filter id="flight-glow" x="-30%" y="-30%" width="160%" height="160%">
+                    <feGaussianBlur stdDeviation="5" result="blur" />
+                    <feMerge>
+                      <feMergeNode in="blur" />
+                      <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                  </filter>
+                  <filter id="sketch-wobble" x="-6%" y="-6%" width="112%" height="112%">
+                    <feTurbulence baseFrequency="0.018" numOctaves="2" seed="8" result="noise" />
+                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="2.2" />
+                  </filter>
+                </defs>
+                <ellipse class="earth-parking-orbit" cx="790" cy="350" rx="82" ry="32" />
+                <path class="flight-path ghost" d="M798 314 C724 294 660 312 642 356 C616 418 704 456 796 414 C918 358 842 250 704 164 C560 76 352 92 206 238 C138 306 120 380 168 410 C222 444 286 396 268 346 C248 292 174 292 152 342 C118 420 260 490 474 482 C650 474 770 414 798 314" />
+                <path class="flight-path active" d="M798 314 C724 294 660 312 642 356 C616 418 704 456 796 414 C918 358 842 250 704 164 C560 76 352 92 206 238 C138 306 120 380 168 410 C222 444 286 396 268 346 C248 292 174 292 152 342 C118 420 260 490 474 482 C650 474 770 414 798 314" />
+                <g class="spacecraft hero-rocket" filter="url(#flight-glow)">
+                  <animateMotion dur="24s" repeatCount="indefinite" rotate="auto">
+                    <mpath href="#artemis-loop" />
+                  </animateMotion>
+                  <path class="hero-rocket-plume" d="M-18 -8 C-34 -3 -34 3 -18 8 C-23 3 -23 -3 -18 -8 Z" />
+                  <path class="hero-rocket-fin fin-top" d="M-8 -8 L-20 -19 L-14 -5 Z" />
+                  <path class="hero-rocket-fin fin-bottom" d="M-8 8 L-20 19 L-14 5 Z" />
+                  <rect class="hero-rocket-body" x="-19" y="-10" width="38" height="20" rx="10" />
+                  <path class="hero-rocket-nose" d="M16 -10 L31 0 L16 10 Z" />
+                  <circle class="hero-rocket-window" cx="2" cy="0" r="4.5" />
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="hero-grid"></div>
+          <div class="data-routes">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="hero-content">
+          <h1>Wuyao Li</h1>
+          <p class="hero-motto">Transcend the 0.12-pixel dot, embrace the vastness beyond.</p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button secondary enter-button" href="#about"><i data-lucide="plus"></i><span>See You on the Other Side</span></a>
+          </div>
+        </div>
+        <aside class="hero-panel portrait-panel" aria-label="Profile snapshot" hidden>
+          <figure class="portrait-frame">
+            <img src="./个人照片.jpg" alt="Portrait of Wuyao Li" />
+          </figure>
+          <div>
+            <span>Identity</span>
+            <strong>Graduate Student</strong>
+          </div>
+          <div>
+            <span>Education</span>
+            <strong>Nanjing Forestry University</strong>
+          </div>
+          <div>
+            <span>Focus</span>
+            <strong>Urban Carbon Metabolism / Spatial Climate Justice / Urban Nature Capitalization</strong>
+          </div>
+        </aside>
+      </section>
+
+      <section class="signal-strip" aria-label="Profile highlights">
+        <div>
+          <strong>Perspective</strong>
+          <span>Climate economics and environmental policy evaluation.</span>
+        </div>
+        <div>
+          <strong>Methods</strong>
+          <span>Spatial econometrics, machine learning, and optimization.</span>
+        </div>
+        <div>
+          <strong>Research</strong>
+          <span>Urban carbon metabolism, climate justice, and nature capitalization.</span>
+        </div>
+      </section>
+
+      <section class="section atlas-section" id="atlas" hidden>
+        <div class="section-heading">
+          <p class="eyebrow">Graphical Abstracts</p>
+          <h2>Three research stories prepared as quiet visual abstracts.</h2>
+        </div>
+        <div class="abstract-grid" aria-label="Manuscript graphical abstract previews">
+          <article class="abstract-card carbon-abstract">
+            <div class="abstract-visual" aria-hidden="true">
+              <div class="abstract-title">Spatial Carbon Mapping</div>
+              <div class="carbon-sources">
+                <span>Industry</span>
+                <span>Commercial</span>
+                <span>Residential</span>
+                <span>Transport</span>
+              </div>
+              <div class="abstract-map">
+                <span class="map-layer heat"></span>
+                <span class="map-layer sink"></span>
+                <span class="map-layer grid"></span>
+              </div>
+              <div class="abstract-city">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="abstract-roads">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="abstract-copy">
+              <p class="card-kicker">Under Review / Sustainable Cities and Society</p>
+              <h3>Unmasking the Compact City Paradox</h3>
+              <p>Graphical abstract direction: multi-sectoral carbon flux attribution, LULUCF carbon legacy, luminous-thermal decoupling, and financialized carbon hotspots.</p>
+            </div>
+          </article>
+          <article class="abstract-card justice-abstract">
+            <div class="abstract-visual" aria-hidden="true">
+              <div class="abstract-title">Climate Justice Frontier</div>
+              <div class="parcel-field">
+                <span></span><span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <div class="frontier-curve">
+                <span></span>
+                <i></i>
+              </div>
+              <div class="justice-labels">
+                <span>Efficiency</span>
+                <span>Equity</span>
+              </div>
+            </div>
+            <div class="abstract-copy">
+              <p class="card-kicker">Under Review / Climate Policy</p>
+              <h3>Shadow Price of Urban Climate Justice</h3>
+              <p>Graphical abstract direction: capitalized rent barriers, justice-oriented optimization, Pareto frontier, and the non-linear shadow price of environmental equity.</p>
+            </div>
+          </article>
+          <article class="abstract-card nature-abstract">
+            <div class="abstract-visual" aria-hidden="true">
+              <div class="abstract-title">Nature Value Synthesis</div>
+              <div class="funnel-mini">
+                <span>775</span>
+                <span>215</span>
+                <span>173</span>
+                <span>75</span>
+              </div>
+              <div class="effect-mini">
+                <span></span><span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <div class="quality-scale">
+                <span>Quantity</span>
+                <strong>Quality</strong>
+              </div>
+            </div>
+            <div class="abstract-copy">
+              <p class="card-kicker">Under Review / Open House International</p>
+              <h3>Urban Nature Quality versus Quantity</h3>
+              <p>Graphical abstract direction: global HPM evidence, elasticity standardization, three-level random-effects modeling, heterogeneity testing, and nature capitalization.</p>
+            </div>
+          </article>
+        </div>
+        <div class="lab-switcher" role="group" aria-label="Research method demos">
+          <button class="lab-tab active" type="button" data-lab-tab="carbon">Carbon Downscaling</button>
+          <button class="lab-tab" type="button" data-lab-tab="justice">Justice Optimizer</button>
+          <button class="lab-tab" type="button" data-lab-tab="nature">Nature Meta-Analysis</button>
+        </div>
+        <div class="atlas-shell carbon-lab" data-lab-panel="carbon" data-carbon-lab>
+          <div class="atlas-stage carbon-stage model-stage" aria-label="Spatially explicit carbon mapping method model">
+            <div class="model-header">
+              <h3>Spatially-Explicit Carbon Mapping</h3>
+              <p>Macro-control totals are constrained first, then allocated through physical urban structure.</p>
+            </div>
+            <div class="equation-strip" aria-label="Carbon source equations">
+              <span>Sources ↑↑</span>
+              <b>Industry</b>
+              <i>Energy × Output</i>
+              <b>Commercial</b>
+              <i>TBA × Height × EUI</i>
+              <b>Residential</b>
+              <i>Parcel × FAR × Vintage</i>
+              <b>Transport</b>
+              <i>VKT × Road Flow</i>
+            </div>
+            <div class="model-canvas">
+              <div class="model-column source-column">
+                <p class="model-label">Macro-Control Inputs</p>
+                <article>
+                  <strong>Industry</strong>
+                  <span>Energy consumption × economic output</span>
+                </article>
+                <article>
+                  <strong>Commercial</strong>
+                  <span>Total building area × height × EUI</span>
+                </article>
+                <article>
+                  <strong>Residential</strong>
+                  <span>Parcel area × FAR × construction vintage</span>
+                </article>
+                <article>
+                  <strong>Transport</strong>
+                  <span>VKT × road hierarchy × traffic flow</span>
+                </article>
+              </div>
+              <div class="model-column mechanics-column">
+                <p class="model-label">Spatial Allocation Mechanics</p>
+                <div class="mini-scene">
+                  <div class="mini-buildings" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <div class="mini-roads" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <div class="mini-layers" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+                <div class="method-tags">
+                  <span>TBA-based downscaling</span>
+                  <span>POI / AOI semantics</span>
+                  <span>Line-based transport flow</span>
+                  <span>LULUCF source-sink balance</span>
+                </div>
+              </div>
+              <div class="model-column output-column">
+                <p class="model-label">30m Grid Output</p>
+                <div class="city-slab">
+                  <div class="carbon-grid mini-carbon-grid" data-carbon-grid aria-label="30m carbon allocation grid"></div>
+                  <span class="slab-label">Synthetic allocated carbon surface</span>
+                </div>
+                <div class="finding-card">
+                  <p>Core Question</p>
+                  <strong>Where do macro emissions concentrate after the city is reconstructed as fine-grained spatial evidence?</strong>
+                </div>
+              </div>
+            </div>
+            <div class="cell-readout" data-cell-readout>
+              Select a grid cell in the model surface to inspect its allocated synthetic carbon intensity.
+            </div>
+          </div>
+          <div class="atlas-panel">
+            <p class="card-kicker">Compact City Paradox Model</p>
+            <h3>From Inventory to Spatial Evidence</h3>
+            <p>
+              This prototype should feel like a research framework diagram, not a dashboard: it shows how source sectors,
+              biophysical sinks, built form, roads, and parcel attributes become a 30m carbon surface.
+            </p>
+            <div class="carbon-control">
+              <label for="carbon-total">City-level carbon total</label>
+              <input id="carbon-total" data-carbon-total type="range" min="120" max="960" step="20" value="520" />
+              <div>
+                <strong data-carbon-total-label>520 kt CO2e</strong>
+                <span>Synthetic total</span>
+              </div>
+            </div>
+            <div class="scenario-controls" role="group" aria-label="Carbon allocation scenarios">
+              <button class="lens-button active" type="button" data-scenario="compact">Compact Core</button>
+              <button class="lens-button" type="button" data-scenario="polycentric">Polycentric</button>
+              <button class="lens-button" type="button" data-scenario="buffered">Nature Buffer</button>
+            </div>
+            <div class="factor-toggles" aria-label="Allocation signals">
+              <label><input type="checkbox" data-factor="light" checked /> Nighttime light</label>
+              <label><input type="checkbox" data-factor="heat" checked /> Surface heat</label>
+              <label><input type="checkbox" data-factor="rent" checked /> Rent pressure</label>
+              <label><input type="checkbox" data-factor="nature" checked /> Nature buffer</label>
+            </div>
+            <dl class="carbon-stats">
+              <div>
+                <dt>Allocated total</dt>
+                <dd data-stat-total>520 kt</dd>
+              </div>
+              <div>
+                <dt>Hotspot share</dt>
+                <dd data-stat-hotspot>42%</dd>
+              </div>
+              <div>
+                <dt>Peak cell</dt>
+                <dd data-stat-peak>8.6 kt</dd>
+              </div>
+            </dl>
+            <p class="atlas-note">
+              All values are synthetic. The point is to communicate a method: translating city-scale carbon into
+              fine-grained spatial evidence.
+            </p>
+          </div>
+        </div>
+        <div class="atlas-shell justice-lab is-hidden" data-lab-panel="justice">
+          <div class="atlas-stage justice-stage" aria-label="Synthetic climate justice optimization board">
+            <div class="carbon-map-toolbar">
+              <span>Spatial candidates: inefficient lock-in parcels</span>
+              <strong data-justice-knee>Knee point: balanced frontier</strong>
+            </div>
+            <div class="justice-grid" data-justice-grid aria-label="Justice intervention allocation grid"></div>
+            <div class="cell-readout" data-justice-readout>
+              Adjust the budget and equity weight to see how parcels shift from status quo to targeted intervention.
+            </div>
+          </div>
+          <div class="atlas-panel">
+            <p class="card-kicker">Climate Justice Method Demo</p>
+            <h3>Multi-Objective Justice Optimizer</h3>
+            <p>
+              This synthetic demo follows the manuscript method logic: screen high-carbon, low-resistance parcels,
+              assign intervention choices, and search for a knee point between carbon-sink efficiency and Rawlsian
+              equity.
+            </p>
+            <div class="carbon-control">
+              <label for="justice-budget">Municipal renewal budget</label>
+              <input id="justice-budget" data-justice-budget type="range" min="10" max="30" step="1" value="20" />
+              <div>
+                <strong data-justice-budget-label>20% baseline</strong>
+                <span>Fiscal ceiling</span>
+              </div>
+            </div>
+            <div class="carbon-control">
+              <label for="equity-weight">Equity priority</label>
+              <input id="equity-weight" data-equity-weight type="range" min="0" max="100" step="5" value="55" />
+              <div>
+                <strong data-equity-label>55% Rawlsian</strong>
+                <span>Objective balance</span>
+              </div>
+            </div>
+            <div class="scenario-controls" role="group" aria-label="Justice cost scenarios">
+              <button class="lens-button active" type="button" data-cost-scenario="baseline">Baseline Cost</button>
+              <button class="lens-button" type="button" data-cost-scenario="high">High Cost</button>
+              <button class="lens-button" type="button" data-cost-scenario="low">Low Cost</button>
+            </div>
+            <dl class="carbon-stats">
+              <div>
+                <dt>Heavy parcels</dt>
+                <dd data-justice-heavy>18</dd>
+              </div>
+              <div>
+                <dt>Equity gain</dt>
+                <dd data-justice-equity>64%</dd>
+              </div>
+              <div>
+                <dt>Sink gain</dt>
+                <dd data-justice-sink>41%</dd>
+              </div>
+            </dl>
+            <p class="atlas-note">
+              This is a public method sketch inspired by SMCS, LCA intervention options, NSGA-II search, and knee-point
+              diagnosis. It does not expose manuscript data or results.
+            </p>
+          </div>
+        </div>
+        <div class="atlas-shell nature-lab is-hidden" data-lab-panel="nature">
+          <div class="atlas-stage nature-stage" aria-label="Synthetic meta-analysis workflow">
+            <div class="review-funnel" aria-label="Literature screening funnel">
+              <div style="--funnel-width: 100%"><strong>775</strong><span>Initial records</span></div>
+              <div style="--funnel-width: 74%"><strong>215</strong><span>After title / abstract screening</span></div>
+              <div style="--funnel-width: 58%"><strong>173</strong><span>Full-text assessment</span></div>
+              <div style="--funnel-width: 42%"><strong>75</strong><span>Included HPM studies</span></div>
+            </div>
+            <div class="effect-plot" data-effect-plot aria-label="Synthetic elasticity effect plot"></div>
+          </div>
+          <div class="atlas-panel">
+            <p class="card-kicker">Urban Nature Meta-Analysis Demo</p>
+            <h3>Quality vs Quantity Synthesizer</h3>
+            <p>
+              This demo converts the review method into an interaction: screen studies, standardize coefficients into
+              elasticity, then explore how moderators reshape the capitalization signal in housing markets.
+            </p>
+            <div class="scenario-controls" role="group" aria-label="Urban nature attribute">
+              <button class="lens-button active" type="button" data-nature-attribute="quality">Nature Quality</button>
+              <button class="lens-button" type="button" data-nature-attribute="quantity">Nature Quantity</button>
+              <button class="lens-button" type="button" data-nature-attribute="proximity">Proximity</button>
+            </div>
+            <div class="factor-toggles">
+              <label><input type="checkbox" data-moderator="developing" checked /> Developing context</label>
+              <label><input type="checkbox" data-moderator="rental" /> Rental market</label>
+              <label><input type="checkbox" data-moderator="near" checked /> Near-distance effect</label>
+              <label><input type="checkbox" data-moderator="quality" checked /> Quality indicators</label>
+            </div>
+            <div class="alignment-meter" aria-label="Synthetic elasticity estimate">
+              <span>Estimated capitalization elasticity</span>
+              <div><i data-elasticity-meter></i></div>
+              <strong data-elasticity-score>+7.4%</strong>
+            </div>
+            <dl class="carbon-stats">
+              <div>
+                <dt>Model</dt>
+                <dd>3-level RE</dd>
+              </div>
+              <div>
+                <dt>Heterogeneity</dt>
+                <dd data-heterogeneity>Moderate</dd>
+              </div>
+              <div>
+                <dt>Robustness</dt>
+                <dd data-robustness>Stable</dd>
+              </div>
+            </dl>
+            <p class="atlas-note">
+              The visual abstracts the manuscript's meta-analytic workflow: identification, quality screening,
+              elasticity standardization, moderator analysis, and sensitivity checks.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro" id="about">
+        <div class="section-heading about-heading">
+          <p class="eyebrow">About Me</p>
+        </div>
+        <div class="about-overview">
+          <aside class="about-profile" aria-label="Profile snapshot">
+            <figure class="about-portrait">
+              <img src="./个人照片.jpg" alt="Portrait of Wuyao Li" />
+            </figure>
+            <dl>
+              <div>
+                <dt>Focus</dt>
+                <dd>Urban Carbon Metabolism / Spatial Climate Justice / Urban Nature Capitalization</dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
+        <div class="intro-grid">
+          <div class="intro-copy">
+            <p>
+              I am a second-year graduate student in Landscape Architecture at the School of Landscape Architecture,
+              Nanjing Forestry University.
+            </p>
+            <p>
+              My research addresses the socioeconomic impacts of climate change and environmental shocks. I
+              am dedicated to leveraging spatial data science and econometric models to evaluate the efficiency of
+              environmental policies and climate adaptation strategies.
+            </p>
+            <p>
+              My advisor is
+              <a class="inline-link" href="https://scholar.google.com/citations?user=NMl-hD8AAAAJ&hl=zh-CN" target="_blank" rel="noreferrer">Prof. Huilin Liang</a>
+              from the School of Landscape Architecture, Nanjing Forestry University.
+            </p>
+            <p>
+              I am currently seeking Research Assistant opportunities and prospective PhD pathways focused on climate
+              economics and environmental public policy.
+            </p>
+          </div>
+        </div>
+        <div class="education-grid" aria-label="Education">
+          <article>
+            <p class="card-kicker">Undergraduate / 2019-2024</p>
+            <h3>
+              <a class="school-link" href="https://www.hzu.edu.cn/main.htm" target="_blank" rel="noreferrer">Huizhou University, Guangdong Province</a>
+            </h3>
+          </article>
+          <article>
+            <p class="card-kicker">Graduate / 2024-2027</p>
+            <h3>
+              <a class="school-link" href="https://www.njfu.edu.cn" target="_blank" rel="noreferrer">Nanjing Forestry University, Jiangsu Province</a>
+            </h3>
+          </article>
+        </div>
+      </section>
+
+      <section class="section research-section" id="research" hidden>
+        <div class="section-heading">
+          <p class="eyebrow">Research</p>
+          <h2>Research themes connecting urban decarbonization, spatial inequality, and environmental policy evaluation.</h2>
+        </div>
+        <div class="theme-map" aria-label="Research theme map">
+          <article class="theme-node active" tabindex="0" data-theme-detail="I reconstruct carbon metabolism across fine-grained urban fabrics to examine how decarbonization assumptions change when macro inventories are translated into spatial evidence.">
+            <span>01</span>
+            <h3>Urban Carbon Metabolism</h3>
+            <p>High-resolution carbon accounting, spatial downscaling, and metabolic typology diagnosis.</p>
+          </article>
+          <article class="theme-node" tabindex="0" data-theme-detail="I quantify the socioeconomic trade-offs of climate adaptation by linking spatial optimization, environmental equity, land rent, and policy cost constraints.">
+            <span>02</span>
+            <h3>Spatial Climate Justice</h3>
+            <p>Efficiency-equity trade-offs, shadow prices, and justice-oriented urban intervention pathways.</p>
+          </article>
+          <article class="theme-node" tabindex="0" data-theme-detail="I evaluate how urban nature quality and quantity are capitalized into housing markets through hedonic pricing evidence and meta-analytic synthesis.">
+            <span>03</span>
+            <h3>Urban Nature Capitalization</h3>
+            <p>Hedonic pricing, global meta-analysis, and economic valuation of nature-based solutions.</p>
+          </article>
+        </div>
+        <div class="theme-detail" data-theme-output>
+          I reconstruct carbon metabolism across fine-grained urban fabrics to examine how decarbonization assumptions
+          change when macro inventories are translated into spatial evidence.
+        </div>
+      </section>
+
+      <section class="section publications" id="publications">
+        <div class="section-heading compact">
+          <p class="eyebrow research-title">Research Experience</p>
+        </div>
+        <div class="card-grid compact-grid" data-filter-list="pubs">
+          <article class="info-card publication-card" data-category="carbon">
+            <div class="research-visual">
+              <img src="./Unmasking the compact city paradox Luminous-thermal decoupling reveals financialized carbon hotspots.png" alt="Graphical abstract preview for the compact city paradox manuscript" />
+            </div>
+            <div class="publication-copy">
+              <p class="card-kicker publication-meta"><span>Submitted to</span> <strong>Sustainable Cities and Society</strong> <span>/ Under Review</span></p>
+              <h3>Unmasking the compact city paradox: Luminous-thermal decoupling reveals financialized carbon hotspots</h3>
+            </div>
+          </article>
+          <article class="info-card publication-card" data-category="justice">
+            <div class="research-visual">
+              <img src="./Quantifying the non-linear shadow price of urban climate justice A multi-objective optimization approach to the capitalized rent barrier.png" alt="Graphical abstract preview for the urban climate justice manuscript" />
+            </div>
+            <div class="publication-copy">
+              <p class="card-kicker publication-meta"><span>Submitted to</span> <strong>Climate Policy</strong> <span>/ Under Review</span></p>
+              <h3>Quantifying the non-linear shadow price of urban climate justice: A multi-objective optimization approach to the capitalized rent barrier</h3>
+            </div>
+          </article>
+          <article class="info-card publication-card" data-category="nature">
+            <div class="research-visual">
+              <img src="./Capitalization of Urban Nature Quality versus Quantity in Housing Markets A Global Meta-Analysis (1990–2023).png" alt="Graphical abstract preview for the urban nature meta-analysis manuscript" />
+            </div>
+            <div class="publication-copy">
+              <p class="card-kicker publication-meta"><span>Submitted to</span> <strong>Open House International</strong> <span>/ Under Review</span></p>
+              <h3>Capitalization of Urban Nature Quality versus Quantity in Housing Markets: A Global Meta-Analysis (1990-2023)</h3>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section portfolio" id="portfolio">
+        <div class="section-heading compact">
+          <p class="eyebrow portfolio-title">Personal Works</p>
+        </div>
+        
+        <div class="work-grid" data-filter-list="work">
+          <article class="work-card featured-work" data-category="design visual">
+            <div class="work-image board-image portfolio-cover">
+              <img src="./鸟瞰图_画板 1.jpg" alt="Bird's-eye view rendering for the Jinxing Village community revitalization project" />
+            </div>
+            <div class="work-body">
+              <p class="card-kicker">Undergraduate Graduation Design</p>
+              <a class="board-project-link" href="./undergraduate-graduation-design.html" target="_blank" rel="noreferrer">
+                <span>Seeking the Wild Dreams of the Countryside, Connecting the Wisdom of Green Mountains.</span>
+                <span>A community revitalization plan for Jinxing Village based on multi-resource orientation.</span>
+              </a>
+            </div>
+          </article>
+          <article class="work-card featured-work" data-category="drawing visual">
+            <div class="work-image board-image sketch-cover">
+              <img src="./手绘作品3.jpg" alt="Hand-drawn work cover by Wuyao Li" />
+            </div>
+            <div class="work-body">
+              <p class="card-kicker">Hand-drawn Works</p>
+              <a class="board-project-link sketch-project-title" href="./hand-drawn-works.html" target="_blank" rel="noreferrer">Selected Sketches and Personal Drawings</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section honors" id="honors">
+        <div class="section-heading compact">
+          <p class="eyebrow honors-title">Honors</p>
+        </div>
+        <div class="honor-wall">
+          <article>
+            <time>National</time>
+            <h3>National Research Grant</h3>
+            <p>National College Student Innovation and Entrepreneurship Training Program.</p>
+          </article>
+          <article>
+            <time>Provincial</time>
+            <h3>Provincial Project</h3>
+            <p>"Climbing Program" Special Funds for Guangdong College Students' Scientific and Technological Innovation.</p>
+          </article>
+          <article>
+            <time>Provincial</time>
+            <h3>Bronze Award</h3>
+            <p>The 9th Guangdong University Architecture and Environment Art Design Exhibition.</p>
+          </article>
+          <article>
+            <time>Provincial</time>
+            <h3>Excellence Award</h3>
+            <p>Guangdong Environmental Art Design Awards.</p>
+          </article>
+          <article>
+            <time>University</time>
+            <h3>Excellence Award</h3>
+            <p>The 5th China International "Internet+" Innovation and Entrepreneurship Competition.</p>
+          </article>
+          <article>
+            <time>University</time>
+            <h3>Third-Class Scholarship &amp; Outstanding Student</h3>
+            <p>Huizhou University Scholarship and Student Honor.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section projects" id="projects" hidden>
+        <div class="section-heading compact">
+          <p class="eyebrow">Projects</p>
+          <h2>Selected project track</h2>
+        </div>
+        <div class="project-list">
+          <article>
+            <span>01</span>
+            <h3>Seeking the Wild Dreams of the Countryside, Connecting the Wisdom of Green Mountains</h3>
+            <p>A community revitalization plan for Jinxing Village based on multi-resource orientation.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Research-to-Policy Translation</h3>
+            <p>Future project slot for translating spatial climate research into policy evaluation and adaptation strategies.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Graphical Research Communication</h3>
+            <p>Future project slot for graphical abstracts, research diagrams, and data-driven visual narratives.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section skills" id="skills">
+        <div class="section-heading compact skills-heading">
+          <p class="eyebrow skills-title">Skills</p>
+        </div>
+          <div class="skills-grid">
+          <div>
+            <h3>Programming &amp; Spatial Data Science</h3>
+            <p>Python, R, ArcGIS Pro, GEE (Google Earth Engine), Rhino, Photoshop, Adobe Illustrator.</p>
+          </div>
+          <div>
+            <h3>Econometrics &amp; Spatial Statistics</h3>
+            <p>Mainly includes Hedonic Pricing Model, MGWR (Multiscale Geographically Weighted Regression), and Meta-analysis.</p>
+          </div>
+          <div>
+            <h3>Machine Learning &amp; Spatial Optimization</h3>
+            <p>Mainly includes NSGA-II Evolutionary Algorithm, Pareto Frontier Analysis, and DTW spatiotemporal clustering analysis.</p>
+          </div>
+          <div>
+            <h3>Urban Carbon Accounting &amp; Spatial Downscaling</h3>
+            <p>Sectoral urban carbon-emission accounting and high-resolution spatial downscaling of city-level carbon totals.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section timeline" id="timeline" hidden>
+        <div class="section-heading compact">
+          <p class="eyebrow">Timeline</p>
+          <h2>Academic and professional trajectory</h2>
+        </div>
+        <ol class="timeline-list">
+          <li>
+            <time>2024 - Present</time>
+            <div>
+              <h3>Nanjing Forestry University</h3>
+              <p>Graduate study in Landscape Architecture.</p>
+            </div>
+          </li>
+          <li>
+            <time>2024</time>
+            <div>
+              <h3>Design award recognition in Guangdong</h3>
+              <p>Received an Excellence Award in local practice and a Bronze Award in a provincial graduation design exhibition.</p>
+            </div>
+          </li>
+          <li>
+            <time>Undergraduate</time>
+            <div>
+              <h3>Huizhou University, Guangdong Province</h3>
+              <p>Undergraduate institution.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section cv-contact" id="cv">
+        <div class="section-heading compact">
+          <p class="eyebrow contact-title">Contact</p>
+        </div>
+        <div class="contact-panel merged-contact" id="contact">
+          <div class="contact-links">
+            <button class="contact-copy-button" type="button" data-copy-value="phil1ai23@njfu.edu.cn" aria-label="Copy primary email"><i data-lucide="mail"></i><span>Primary: phil1ai23@njfu.edu.cn</span></button>
+            <button class="contact-copy-button" type="button" data-copy-value="13672458796@163.com" aria-label="Copy secondary email"><i data-lucide="mail-plus"></i><span>Secondary: 13672458796@163.com</span></button>
+            <button class="contact-copy-button" type="button" data-copy-value="13672458796" aria-label="Copy phone and WeChat"><i data-lucide="phone"></i><span>Phone / WeChat: 13672458796</span></button>
+            <button class="contact-copy-button" type="button" data-copy-value="492379397" aria-label="Copy QQ"><i data-lucide="message-circle"></i><span>QQ: 492379397</span></button>
+            <a href="./cv.pdf" target="_blank" rel="noreferrer"><i data-lucide="file-text"></i><span>CV: Click to Download</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="copy-toast" data-copy-toast role="status" aria-live="polite">Copied to clipboard</div>
+
+    <footer class="site-footer">
+      <span>Less interests, More interest</span>
+    </footer>
+
+    <dialog class="detail-dialog" data-detail-dialog>
+      <button class="icon-button dialog-close" type="button" data-close-detail aria-label="Close details" title="Close details">
+        <i data-lucide="x"></i>
+      </button>
+      <p class="eyebrow">Project Detail</p>
+      <h2 data-dialog-title></h2>
+      <p data-dialog-body></p>
+    </dialog>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
