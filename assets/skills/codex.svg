@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Codex">
+  <defs>
+    <radialGradient id="cx-glow" cx="28%" cy="20%" r="88%">
+      <stop offset="0" stop-color="#d8c5ff"/>
+      <stop offset=".35" stop-color="#8fa3ff"/>
+      <stop offset=".72" stop-color="#596aff"/>
+      <stop offset="1" stop-color="#3540c8"/>
+    </radialGradient>
+    <linearGradient id="cx-sheen" x1="26" y1="18" x2="96" y2="104" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".55"/>
+      <stop offset=".48" stop-color="#ffffff" stop-opacity=".08"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#cx-glow)" d="M42 20c8-10 25-9 34 2 12-5 27 4 29 17 14 4 20 21 11 33 6 13-3 29-18 32-6 13-24 17-35 7-12 9-31 5-37-9-14-4-21-20-13-32-8-12-3-29 11-34 1-8 8-14 18-16Z"/>
+  <path fill="url(#cx-sheen)" d="M28 45c11-18 37-27 61-15 13 7 21 19 23 31-9-12-24-21-43-24-17-3-31 0-41 8Z"/>
+  <path fill="none" stroke="#f7f9ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="9" d="M46 48l16 16-16 16M76 80h22"/>
+</svg>

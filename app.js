@@ -503,7 +503,7 @@ detailDialog?.addEventListener("click", (event) => {
 });
 
 const revealTargets = document.querySelectorAll(
-  ".section-heading, .signal-strip > div, .atlas-stage, .atlas-panel, .intro-grid, .education-grid article, .theme-node, .info-card, .work-card, .honor-wall article, .project-list article, .skills-grid div, .timeline-list li, .cv-panel, .contact-panel",
+  ".section-heading, .signal-strip > div, .atlas-stage, .atlas-panel, .intro-grid, .education-grid article, .theme-node, .info-card, .work-card, .honor-wall article, .project-list article, .skill-node, .timeline-list li, .cv-panel, .contact-panel",
 );
 
 revealTargets.forEach((target) => target.classList.add("reveal"));
